@@ -1,0 +1,31 @@
+.hbox{
+    -fx-background-color: black;
+}
+
+.tabel{
+    -fx-background-color: #c7f6ec;
+    -fx-border-radius: 22;
+    -fx-background-radius: 22;
+    -fx-text-fill: #c4dfe6;
+}
+
+.hbox2{
+    -fx-background-color: linear-gradient(to left,#011a27,#557ce8);
+    }
+
+.button{
+    -fx-background-color: #003b56;/*#07575B;*/
+    -fx-background-radius: 30;
+    -fx-border-radius: 30;
+    -fx-font-weight: bold;
+    -fx-font-size: 15;
+    -fx-text-fill: #c4dfe6;
+}
+.button:hover{
+    -fx-background-color: #540c0c;
+    -fx-background-radius: 30;
+    -fx-border-radius: 30;
+    -fx-font-weight: bold;
+    -fx-font-size: 15;
+    -fx-text-fill: #b8adea;
+}

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="456.0" prefWidth="727.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ControllerFiltrari">
+   <children>
+      <HBox layoutX="153.0" layoutY="-49.0" prefHeight="86.0" prefWidth="747.0" style="-fx-background-color: #2d3447;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fitHeight="86.0" fitWidth="87.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/d3.png" />
+               </image>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </ImageView>
+            <Label fx:id="label" text="Filtrari" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="27.0" />
+               </font>
+               <HBox.margin>
+                  <Insets top="20.0" />
+               </HBox.margin>
+            </Label>
+            <ImageView fx:id="back" fitHeight="34.0" fitWidth="39.0" onMouseClicked="#clickBack" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/back.png" />
+               </image>
+               <HBox.margin>
+                  <Insets left="500.0" top="20.0" />
+               </HBox.margin>
+            </ImageView>
+         </children>
+      </HBox>
+      <VBox layoutX="464.0" layoutY="109.0" prefHeight="322.0" prefWidth="198.0">
+         <children>
+            <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="118.0" prefWidth="150.0" style="-fx-border-color: black; -fx-border-width: 2; -fx-border-radius: 10;">
+               <children>
+                  <RadioButton fx:id="btnFiltrareTeme" mnemonicParsing="false" onAction="#clickBtnFiltrareTema" text="Teme" textFill="#2d3447">
+                     <VBox.margin>
+                        <Insets bottom="5.0" top="15.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets left="3.0" />
+                     </padding>
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </RadioButton>
+                  <RadioButton fx:id="btnNoteStudent" mnemonicParsing="false" onAction="#clickBtnFiltrareNoteStudent" text="Student" textFill="#2d3447">
+                     <VBox.margin>
+                        <Insets bottom="5.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets left="3.0" />
+                     </padding>
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </RadioButton>
+                  <RadioButton fx:id="btnFiltrareGrupa" mnemonicParsing="false" onAction="#clickBtnFiltrareGrupa" text="Tema si grupa" textFill="#2d3447">
+                     <VBox.margin>
+                        <Insets bottom="5.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets left="3.0" />
+                     </padding>
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </RadioButton>
+                  <RadioButton fx:id="btnData" mnemonicParsing="false" onAction="#clickBtnFiltrareData" text="Data" textFill="#2d3447">
+                     <padding>
+                        <Insets left="3.0" />
+                     </padding>
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </RadioButton>
+               </children>
+               <VBox.margin>
+                  <Insets left="20.0" right="10.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets left="20.0" />
+               </padding>
+            </VBox>
+            <ComboBox fx:id="comboBoxTeme" prefWidth="150.0" promptText="Teme" styleClass="combo-box" stylesheets="@../cssDesign/mainStyleSheet.css">
+               <VBox.margin>
+                  <Insets left="20.0" top="15.0" />
+               </VBox.margin>
+            </ComboBox>
+            <TextField fx:id="studenti" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="150.0" promptText="Student" styleClass="txt" stylesheets="@../cssDesign/mainStyleSheet.css">
+               <VBox.margin>
+                  <Insets left="20.0" top="15.0" />
+               </VBox.margin>
+            </TextField>
+            <ComboBox fx:id="comboBoxGrupa" prefWidth="150.0" promptText="Grupa" styleClass="combo-box" stylesheets="@../cssDesign/mainStyleSheet.css">
+               <VBox.margin>
+                  <Insets left="20.0" top="15.0" />
+               </VBox.margin>
+            </ComboBox>
+            <DatePicker fx:id="dataInitiala" prefHeight="26.0" prefWidth="150.0" promptText="Data start">
+               <VBox.margin>
+                  <Insets left="20.0" top="15.0" />
+               </VBox.margin>
+            </DatePicker>
+            <DatePicker fx:id="dataFinala" prefHeight="26.0" prefWidth="150.0" promptText="Data end">
+               <VBox.margin>
+                  <Insets left="20.0" top="15.0" />
+               </VBox.margin>
+            </DatePicker>
+         </children>
+      </VBox>
+      <PieChart fx:id="pieChart" layoutX="32.0" layoutY="125.0" prefHeight="290.0" prefWidth="394.0" />
+      <Button layoutX="508.0" layoutY="252.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#click" prefHeight="39.0" prefWidth="324.0" rotate="90.0" style="-fx-background-color: #2e9fff;" text="GENERARE PDF" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

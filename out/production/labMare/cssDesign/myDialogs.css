@@ -1,0 +1,28 @@
+.myDialog{
+    -fx-background-color: #2d3447;
+    -fx-border-color:black;
+    -fx-border-width:2.0px;
+}
+.myDialog > *.button-bar > *.container{
+    -fx-background-color: #2d3447;
+}
+.myDialog > *.label.content{
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-text-inner-color: white;
+    -fx-text-fill: white;
+}
+
+.myDialog .button{
+    -fx-background-color:#2d3447;
+    -fx-text-fill:white;
+    -fx-wrap-text: true;
+    -fx-effect: dropshadow( three-pass-box, white, 10.0, 0.0, 0.0, 0.0);
+    -fx-cursor:hand;
+}
+
+.myDialog .button:hover{
+    -fx-background-color:white;
+    -fx-text-fill:#2d3447;
+    -fx-font-weight:bold;
+}

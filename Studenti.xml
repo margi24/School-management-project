@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Entity>
+  <Student id="11">
+    <nume>Olar Marian</nume>
+    <grupa>225</grupa>
+    <email>omir2367@scs.ubbcluj.ro</email>
+  </Student>
+  <Student id="12">
+    <nume>Bocsa Mirela</nume>
+    <grupa>231</grupa>
+    <email>bmir1111@scs.ubbcluj.ro</email>
+  </Student>
+  <Student id="13">
+    <nume>Bob Diana</nume>
+    <grupa>931</grupa>
+    <email>bdir1112@scs.ubbcluj.ro</email>
+  </Student>
+  <Student id="14">
+    <nume>Dragan Alex</nume>
+    <grupa>223</grupa>
+    <email>dair2210@scs.ubbcluj.ro</email>
+  </Student>
+  <Student id="15">
+    <nume>Dunca Lucian</nume>
+    <grupa>223</grupa>
+    <email>dlir2211@scs.ubbcluj.ro</email>
+  </Student>
+  <Student id="16">
+    <nume>Dunca Ana</nume>
+    <grupa>223</grupa>
+    <email>dair2212@scs.ubbcluj.ro</email>
+  </Student>
+  <Student id="17">
+    <nume>Miron Mihai</nume>
+    <grupa>225</grupa>
+    <email>mmir2345@scs.ubbcluj.ro</email>
+  </Student>
+  <Student id="18">
+    <nume>matei</nume>
+    <grupa>225</grupa>
+    <email>matei</email>
+  </Student>
+  <Student id="1">
+    <nume>Marginean Diana</nume>
+    <grupa>225</grupa>
+    <email>mdir2341</email>
+  </Student>
+  <Student id="2">
+    <nume>Miholca Ionela</nume>
+    <grupa>225</grupa>
+    <email>nrir2361@scs.ubbcluj.ro</email>
+  </Student>
+  <Student id="3">
+    <nume>Munteanu Lisa</nume>
+    <grupa>225</grupa>
+    <email>mlir2355@scs.ubbcluj.ro</email>
+  </Student>
+  <Student id="4">
+    <nume>Nicu Raul</nume>
+    <grupa>225</grupa>
+    <email>nrir2342@scs.ubbcluj.ro</email>
+  </Student>
+  <Student id="5">
+    <nume>Mardaloescu Anda</nume>
+    <grupa>225</grupa>
+    <email>mair2340@scs.ubbcluj.ro</email>
+  </Student>
+  <Student id="7">
+    <nume>Pop Diana</nume>
+    <grupa>226</grupa>
+    <email>pdir2371@scs.ubbcluj.ro</email>
+  </Student>
+  <Student id="8">
+    <nume>Neacsu Andreea</nume>
+    <grupa>225</grupa>
+    <email>nair2348@scs.ubbcluj.ro</email>
+  </Student>
+  <Student id="9">
+    <nume>Marian Andra</nume>
+    <grupa>225</grupa>
+    <email>mair2343@scs.ubbcluj.ro</email>
+  </Student>
+  <Student id="10">
+    <nume>Melu Eduard</nume>
+    <grupa>225</grupa>
+    <email>meir2344@scs.ubbcluj.ro</email>
+  </Student>
+</Entity>

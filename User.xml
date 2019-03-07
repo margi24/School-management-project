@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Entity>
+  <User user="gabi">
+    <parola>$2a$10$B37SwKHOVd9tGbQGuDTR2eoo4kLF6soaf1cDB0NDXsiezKGllv5WW</parola>
+    <tip>profesor</tip>
+  </User>
+  <User user="mdir2341">
+    <parola>$2a$10$OvRL7ORdih/rnc6hqWsMpeqdNI9pwtAdY2qC7gZJneWmVnAMjKnYS</parola>
+    <tip>student</tip>
+  </User>
+  <User user="admin">
+    <parola>$2a$10$Jj2PZIeIF1J0LAwGZLnfGOM.DinTQm0EBpRJSET1X2kcupVjJEkAS</parola>
+    <tip>admin</tip>
+  </User>
+  <User user="matei">
+    <parola>$2a$10$FFcfeSxB6diITFZXr3f4n./lDf6v5wWR7jVw1euH31cC7qT5OZC5O</parola>
+    <tip>student</tip>
+  </User>
+  <User user="mair2340@scs.ubbcluj.ro">
+    <parola>$2a$10$rakpejzD0wdl/YW8bsRxqubB9r9esDf0Zu2HPRYhZd7/UFxknZE.C</parola>
+    <tip>student</tip>
+  </User>
+</Entity>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Entity>
+  <Profesor nume="Gabi Mircea">
+    <email>gabi</email>
+  </Profesor>
+  <Profesor nume="Serban Camelia">
+    <email>camelia@scs.ubbcluj.ro</email>
+  </Profesor>
+  <Profesor nume="Diana Sotropa">
+    <email>sotropa</email>
+  </Profesor>
+</Entity>

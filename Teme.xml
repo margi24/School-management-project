@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Entity>
+  <Tema id="11">
+    <descriere>Tema nr 14</descriere>
+    <deadline>14</deadline>
+    <primire>13</primire>
+  </Tema>
+  <Tema id="22">
+    <descriere>Tema nr 7</descriere>
+    <deadline>7</deadline>
+    <primire>7</primire>
+  </Tema>
+  <Tema id="12">
+    <descriere>Tema nr 15</descriere>
+    <deadline>15</deadline>
+    <primire>12</primire>
+  </Tema>
+  <Tema id="13">
+    <descriere>Tema nr 16</descriere>
+    <deadline>17</deadline>
+    <primire>16</primire>
+  </Tema>
+  <Tema id="24">
+    <descriere>Tema nr 9</descriere>
+    <deadline>9</deadline>
+    <primire>8</primire>
+  </Tema>
+  <Tema id="14">
+    <descriere>Tema nr 20</descriere>
+    <deadline>20</deadline>
+    <primire>19</primire>
+  </Tema>
+  <Tema id="15">
+    <descriere>Tema nr 19</descriere>
+    <deadline>19</deadline>
+    <primire>18</primire>
+  </Tema>
+  <Tema id="27">
+    <descriere>Tema nr 11</descriere>
+    <deadline>11</deadline>
+    <primire>10</primire>
+  </Tema>
+  <Tema id="17">
+    <descriere>Tema nr 18</descriere>
+    <deadline>18</deadline>
+    <primire>17</primire>
+  </Tema>
+  <Tema id="28">
+    <descriere>Tema nr 10</descriere>
+    <deadline>10</deadline>
+    <primire>9</primire>
+  </Tema>
+  <Tema id="18">
+    <descriere>Tema nr 17</descriere>
+    <deadline>17</deadline>
+    <primire>16</primire>
+  </Tema>
+  <Tema id="29">
+    <descriere>Tema nr 12</descriere>
+    <deadline>12</deadline>
+    <primire>11</primire>
+  </Tema>
+  <Tema id="19">
+    <descriere>Tema nr 4</descriere>
+    <deadline>4</deadline>
+    <primire>3</primire>
+  </Tema>
+  <Tema id="3">
+    <descriere>Tema nr 3</descriere>
+    <deadline>5</deadline>
+    <primire>4</primire>
+  </Tema>
+</Entity>

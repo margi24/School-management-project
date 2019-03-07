@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="477.0" prefWidth="604.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ControllerElev">
+   <children>
+      <VBox layoutY="1.0" prefHeight="400.0" prefWidth="127.0" styleClass="hbox" stylesheets="@../cssDesign/mainStyleSheet.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="470.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fitHeight="133.0" fitWidth="127.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/d3.png" />
+               </image>
+               <VBox.margin>
+                  <Insets left="5.0" top="40.0" />
+               </VBox.margin>
+            </ImageView>
+            <Button fx:id="view" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#click" prefHeight="31.0" prefWidth="81.0" styleClass="btn" stylesheets="@../cssDesign/mainStyleSheet.css" text="View">
+               <VBox.margin>
+                  <Insets left="25.0" top="20.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="tema" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#click" prefHeight="31.0" prefWidth="81.0" styleClass="btn" stylesheets="@../cssDesign/mainStyleSheet.css" text="Teme">
+               <VBox.margin>
+                  <Insets left="25.0" top="20.0" />
+               </VBox.margin></Button>
+            <Button fx:id="nota" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#click" prefHeight="31.0" prefWidth="81.0" styleClass="btn" stylesheets="@../cssDesign/mainStyleSheet.css" text="Note">
+               <VBox.margin>
+                  <Insets left="25.0" top="20.0" />
+               </VBox.margin></Button>
+            <Button minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#clickLogOut" prefHeight="31.0" prefWidth="81.0" styleClass="btn" stylesheets="@../cssDesign/mainStyleSheet.css" text="Log Out">
+               <VBox.margin>
+                  <Insets left="25.0" top="20.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+      <HBox fx:id="hbox" layoutX="152.0" layoutY="66.0" prefHeight="76.0" prefWidth="475.0" styleClass="hbox3" stylesheets="@../cssDesign/mainStyleSheet.css" AnchorPane.rightAnchor="0.0">
+         <children>
+            <Label fx:id="lbl" text="View" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="27.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="60.0" top="20.0" />
+               </HBox.margin>
+            </Label>
+         </children></HBox>
+      <StackPane layoutX="130.0" layoutY="138.0" prefHeight="305.0" prefWidth="434.0" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <Pane fx:id="panePP" prefHeight="250.0" prefWidth="0.0">
+               <children>
+                  <VBox layoutX="-3.0" layoutY="26.0" prefHeight="166.0" prefWidth="316.0">
+                     <children>
+                        <HBox prefHeight="34.0" prefWidth="243.0">
+                           <children>
+                              <ImageView fitHeight="28.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../icons/iconcolorat.png" />
+                                 </image>
+                              </ImageView>
+                              <Label fx:id="lblN" text="Nume" textFill="#2d3447">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="33.0" prefWidth="243.0">
+                           <VBox.margin>
+                              <Insets top="5.0" />
+                           </VBox.margin>
+                           <children>
+                              <ImageView fitHeight="28.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../icons/email.png" />
+                                 </image>
+                                 <HBox.margin>
+                                    <Insets right="5.0" />
+                                 </HBox.margin>
+                              </ImageView>
+                              <Label fx:id="lblG" text="Grupa" textFill="#2d3447">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="43.0" prefWidth="292.0">
+                           <children>
+                              <ImageView fitHeight="28.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../icons/grupa.png" />
+                                 </image>
+                                 <HBox.margin>
+                                    <Insets right="5.0" />
+                                 </HBox.margin>
+                              </ImageView>
+                              <Label fx:id="lblE" text="Email" textFill="#2d3447">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </Pane>
+            <Pane fx:id="paneT" prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <TableView fx:id="tableTeme" prefHeight="200.0" prefWidth="254.0">
+                    <columns>
+                      <TableColumn fx:id="colDescriere" prefWidth="98.40004122257233" style="-fx-background-color: #2e9fff;" text="Descriere" />
+                      <TableColumn fx:id="colDeadline" prefWidth="75.99999237060547" style="-fx-background-color: #2e9fff;" text="Deadline" />
+                        <TableColumn fx:id="colPrimire" prefWidth="77.99996948242188" style="-fx-background-color: #2e9fff;" text="Primire" />
+                    </columns>
+                  </TableView>
+               </children>
+            </Pane>
+            <Pane fx:id="paneN" prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <TableView fx:id="tabelNota" prefHeight="200.0" prefWidth="283.0">
+                    <columns>
+                      <TableColumn fx:id="colTema" minWidth="-Infinity" prefWidth="102.4000107049942" style="-fx-background-color: #2e9fff;" text="Tema" />
+                      <TableColumn fx:id="colFeedback" minWidth="-Infinity" prefWidth="103.99999237060547" style="-fx-background-color: #2e9fff;" text="Data" />
+                        <TableColumn fx:id="colNota" minWidth="-Infinity" prefWidth="75.00003051757812" style="-fx-background-color: #2e9fff;" text="Nota" />
+                    </columns>
+                  </TableView>
+               </children>
+            </Pane>
+         </children>
+      </StackPane>
+      <ImageView fx:id="mini" fitHeight="22.0" fitWidth="28.0" layoutX="562.0" layoutY="14.0" onMouseClicked="#minimize" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../icons/minicol.png" />
+         </image>
+      </ImageView>
+   </children>
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+</AnchorPane>

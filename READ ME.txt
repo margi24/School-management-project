@@ -1,0 +1,3 @@
+cont admin user:admin,parola:admin
+cont profesori user:gabi,parola:gabi
+conturile de profesori/ studenti se pot adauga doar daca sunt memorate de catre admin

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="370.0" prefWidth="560.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ControllerProfA">
+   <children>
+      <HBox layoutX="-6.0" prefHeight="90.0" prefWidth="560.0" styleClass="hbox" stylesheets="@../cssDesign/mainStyleSheet.css" AnchorPane.bottomAnchor="185.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fitHeight="98.0" fitWidth="138.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/d3.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="mini" fitHeight="26.0" fitWidth="26.0" onMouseClicked="#minimize" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/minialb.png" />
+               </image>
+               <HBox.margin>
+                  <Insets left="400.0" />
+               </HBox.margin>
+            </ImageView>
+            <ImageView fx:id="exit" fitHeight="26.0" fitWidth="26.0" onMouseClicked="#exitProgram" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/closealb.png" />
+               </image>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </ImageView>
+         </children>
+      </HBox>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="100.0" layoutX="101.0" layoutY="135.0" onMouseClicked="#clickBtnStud" rotate="45.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="5.0" style="-fx-fill: #2e9fff;" width="100.0" AnchorPane.leftAnchor="123.0" AnchorPane.topAnchor="135.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="100.0" layoutX="337.0" layoutY="135.0" onMouseClicked="#clickBtnProf" rotate="45.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="5.0" style="-fx-fill: #2e9fff;" width="100.0" AnchorPane.rightAnchor="123.0" AnchorPane.topAnchor="135.0" />
+      <Label contentDisplay="CENTER" layoutX="137.0" layoutY="171.0" onMouseClicked="#clickBtnStud" text="Studenti" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label contentDisplay="CENTER" layoutX="348.0" layoutY="171.0" onMouseClicked="#clickBtnProf" text="Profesori" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Button layoutX="244.0" layoutY="289.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#clickLogOut" prefHeight="31.0" prefWidth="86.0" styleClass="btn" stylesheets="@../cssDesign/mainStyleSheet.css" text="Log Out">
+         <effect>
+            <Reflection />
+         </effect>
+      </Button>
+   </children>
+</AnchorPane>

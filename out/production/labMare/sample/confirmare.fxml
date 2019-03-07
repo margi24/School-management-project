@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="379.0" prefWidth="514.0" style="-fx-background-color: #2e9fff; -fx-background-radius: 45; -fx-border-radius: 30; -fx-border-color: #2d3447; -fx-border-width: 5;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ControllerVerificare">
+   <children>
+      <Button fx:id="btnOk" layoutX="152.0" layoutY="325.0" mnemonicParsing="false" onAction="#clickBtnOK" prefHeight="26.0" prefWidth="75.0" styleClass="btn" stylesheets="@../cssDesign/mainStyleSheet.css" text="OK" />
+      <Button fx:id="btnCancel" layoutX="52.0" layoutY="324.0" mnemonicParsing="false" onAction="#clickBtnCancel" prefHeight="26.0" prefWidth="75.0" styleClass="btn" stylesheets="@../cssDesign/mainStyleSheet.css" text="Cancel" />
+      <Label layoutX="32.0" layoutY="28.0" text="Confirmare" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <HBox layoutX="32.0" layoutY="105.0" prefHeight="32.0" prefWidth="463.0">
+         <children>
+            <ImageView fitHeight="32.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/student.png" />
+               </image>
+            </ImageView>
+            <Label prefHeight="18.0" prefWidth="89.0" style="-fx-font-weight: bold;" text="Student" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="5.0" top="5.0" />
+               </HBox.margin>
+            </Label>
+            <Label fx:id="labelStudent" text="Label" textFill="WHITE">
+               <HBox.margin>
+                  <Insets top="5.0" />
+               </HBox.margin>
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox layoutX="20.0" layoutY="190.0" prefHeight="32.0" prefWidth="470.0">
+         <children>
+            <ImageView fitHeight="32.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/nota.png" />
+               </image>
+            </ImageView>
+            <Label style="-fx-font-weight: bold;" text="Nota" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="5.0" top="5.0" />
+               </HBox.margin>
+            </Label>
+            <Label fx:id="labelNota" text="Label" textFill="WHITE">
+               <HBox.margin>
+                  <Insets left="68.0" top="5.0" />
+               </HBox.margin>
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox layoutX="27.0" layoutY="146.0" prefHeight="32.0" prefWidth="470.0">
+         <children>
+            <ImageView fitHeight="32.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/tema.png" />
+               </image>
+            </ImageView>
+            <Label prefHeight="18.0" prefWidth="50.0" style="-fx-font-weight: bold;" text="Tema" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="5.0" top="5.0" />
+               </HBox.margin>
+            </Label>
+            <Label fx:id="labelTema" text="Label" textFill="WHITE">
+               <HBox.margin>
+                  <Insets left="45.0" top="5.0" />
+               </HBox.margin>
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox layoutX="20.0" layoutY="236.0" prefHeight="32.0" prefWidth="478.0">
+         <children>
+            <ImageView fitHeight="32.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/penalizare.png" />
+               </image>
+            </ImageView>
+            <Label style="-fx-font-weight: bold;" text="Penalizare" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="5.0" top="5.0" />
+               </HBox.margin>
+            </Label>
+            <Label fx:id="labelPenalizare" text="Label" textFill="WHITE">
+               <HBox.margin>
+                  <Insets left="33.0" top="5.0" />
+               </HBox.margin>
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

@@ -1,0 +1,21 @@
+.border{
+    -fx-border-radius: 60;
+    -fx-background-color: #cbc5e8;
+    -fx-background-radius: 60;
+}
+.button{
+    -fx-background-color: #b8adea;
+    -fx-background-radius: 30;
+    -fx-border-radius: 30;
+    -fx-font-weight: bold;
+    -fx-font-size: 15;
+    -fx-text-fill: #540c0c;
+}
+.button:hover{
+    -fx-background-color: #540c0c;
+    -fx-background-radius: 30;
+    -fx-border-radius: 30;
+    -fx-font-weight: bold;
+    -fx-font-size: 15;
+    -fx-text-fill: #b8adea;
+}

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Pagination?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane accessibleRole="TABLE_VIEW" prefHeight="567.0" prefWidth="708.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ControllerStudent">
+   <children>
+      <VBox layoutY="49.0" prefHeight="647.0" prefWidth="150.0" style="-fx-background-color: #2d3447;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fx:id="back" fitHeight="32.0" fitWidth="35.0" onMouseClicked="#clickBack" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/back.png" />
+               </image>
+               <VBox.margin>
+                  <Insets left="20.0" top="20.0" />
+               </VBox.margin>
+            </ImageView>
+            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/d3.png" />
+               </image>
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </ImageView>
+            <Button fx:id="view" mnemonicParsing="false" onAction="#click" prefHeight="31.0" prefWidth="75.0" styleClass="btn" stylesheets="@../cssDesign/mainStyleSheet.css" text="View">
+               <VBox.margin>
+                  <Insets bottom="30.0" left="35.0" top="60.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="add" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#click" prefHeight="31.0" prefWidth="75.0" styleClass="btn" stylesheets="@../cssDesign/mainStyleSheet.css" text="Adauga">
+               <VBox.margin>
+                  <Insets left="35.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+      <StackPane layoutX="195.0" layoutY="213.0" prefHeight="336.0" prefWidth="474.0">
+         <children>
+            <Pane fx:id="paneAdd" prefHeight="292.0" prefWidth="413.0">
+               <children>
+                  <VBox prefHeight="291.0" prefWidth="187.0">
+                     <children>
+                        <HBox prefHeight="38.0" prefWidth="200.0">
+                           <children>
+                              <HBox prefHeight="38.0" prefWidth="200.0">
+                                 <children>
+                                    <ImageView fitHeight="29.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../icons/account.png" />
+                                       </image>
+                                       <HBox.margin>
+                                          <Insets right="5.0" />
+                                       </HBox.margin>
+                                    </ImageView>
+                                    <TextField fx:id="nume" prefHeight="26.0" prefWidth="136.0" promptText="Nume" styleClass="txt" stylesheets="@../cssDesign/mainStyleSheet.css" />
+                                 </children>
+                              </HBox>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="38.0" prefWidth="200.0">
+                           <children>
+                              <ImageView fitHeight="29.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../icons/email.png" />
+                                 </image>
+                                 <HBox.margin>
+                                    <Insets right="5.0" />
+                                 </HBox.margin>
+                              </ImageView>
+                              <TextField fx:id="email" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.6" prefWidth="134.0" promptText="Email" styleClass="txt" stylesheets="@../cssDesign/mainStyleSheet.css" />
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="38.0" prefWidth="200.0">
+                           <children>
+                              <ImageView fitHeight="29.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../icons/grupa.png" />
+                                 </image>
+                                 <HBox.margin>
+                                    <Insets right="5.0" />
+                                 </HBox.margin>
+                              </ImageView>
+                              <TextField fx:id="grupa" prefHeight="26.0" prefWidth="136.0" promptText="Grupa" styleClass="txt" stylesheets="@../cssDesign/mainStyleSheet.css" />
+                           </children>
+                        </HBox>
+                        <ImageView fitHeight="40.0" fitWidth="37.0" onMouseClicked="#clickAdd" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/add.png" />
+                           </image>
+                           <VBox.margin>
+                              <Insets left="65.0" />
+                           </VBox.margin>
+                        </ImageView>
+                        <Label fx:id="lbl" text="Student adaugat!" textFill="#2d3447">
+                           <VBox.margin>
+                              <Insets left="40.0" top="10.0" />
+                           </VBox.margin>
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <padding>
+                        <Insets top="30.0" />
+                     </padding>
+                  </VBox>
+               </children>
+            </Pane>
+            <Pane fx:id="panePP" prefHeight="336.0" prefWidth="488.0">
+               <children>
+                  <TextField fx:id="txtCauta" layoutX="25.0" layoutY="21.0" prefHeight="25.0" prefWidth="166.0" promptText="Cauta" styleClass="txt" />
+                  <Pagination fx:id="pagination" layoutX="23.0" layoutY="48.0" prefHeight="254.0" prefWidth="343.0" />
+                  <TableView fx:id="tableView" accessibleRole="MENU_ITEM" layoutX="25.0" layoutY="57.0" prefHeight="200.0" prefWidth="336.0">
+                    <columns>
+                      <TableColumn fx:id="numecol" maxWidth="256.0" minWidth="-Infinity" onEditCommit="#onNumeChange" prefWidth="128.0" style="-fx-background-color: #2e9fff;" text="NUME" />
+                        <TableColumn fx:id="grupacol" maxWidth="144.0" minWidth="-Infinity" onEditCommit="#onGrupaChange" prefWidth="72.0" style="-fx-background-color: #2e9fff;" text="GRUPA" />
+                        <TableColumn fx:id="emailcol" maxWidth="280.0" minWidth="-Infinity" onEditCommit="#onEmailChange" prefWidth="140.0" style="-fx-background-color: #2e9fff;" text="EMAIL" />
+                    </columns>
+                  </TableView>
+                  <ImageView fx:id="del" fitHeight="28.0" fitWidth="28.0" layoutX="198.0" layoutY="19.0" onMouseClicked="#clickDel" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/delete.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+         </children>
+      </StackPane>
+      <HBox fx:id="hbox" layoutX="150.0" layoutY="107.0" prefHeight="100.0" prefWidth="564.0" styleClass="hbox3" stylesheets="@../cssDesign/mainStyleSheet.css">
+         <children>
+            <Label fx:id="label" text="View studenti" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="27.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="60.0" top="20.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+      <ImageView fx:id="mini" fitHeight="29.0" fitWidth="28.0" layoutX="632.0" layoutY="24.0" onMouseClicked="#minimize" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../icons/minicol.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="exit" fitHeight="29.0" fitWidth="28.0" layoutX="672.0" layoutY="24.0" onMouseClicked="#exitProgram" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../icons/exicolort.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
