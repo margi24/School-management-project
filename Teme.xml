@@ -70,4 +70,9 @@
     <deadline>5</deadline>
     <primire>4</primire>
   </Tema>
+  <Tema id="30">
+    <descriere>Tema nr 7281</descriere>
+    <deadline>10</deadline>
+    <primire>9</primire>
+  </Tema>
 </Entity>

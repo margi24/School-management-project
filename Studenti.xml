@@ -1,15 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <Entity>
-  <Student id="11">
-    <nume>Olar Marian</nume>
-    <grupa>225</grupa>
-    <email>omir2367@scs.ubbcluj.ro</email>
-  </Student>
-  <Student id="12">
-    <nume>Bocsa Mirela</nume>
-    <grupa>231</grupa>
-    <email>bmir1111@scs.ubbcluj.ro</email>
-  </Student>
   <Student id="13">
     <nume>Bob Diana</nume>
     <grupa>931</grupa>
@@ -39,6 +29,11 @@
     <nume>matei</nume>
     <grupa>225</grupa>
     <email>matei</email>
+  </Student>
+  <Student id="19">
+    <nume>dia</nume>
+    <grupa>111</grupa>
+    <email>dia</email>
   </Student>
   <Student id="1">
     <nume>Marginean Diana</nume>

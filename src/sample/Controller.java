@@ -58,20 +58,7 @@ public class Controller {
                 root = loader.load();
                 ControllerProfA controller = loader.getController();
                 controller.setService(service);
-                root.setOnMousePressed(new EventHandler<MouseEvent>() {
-                    @Override
-                    public void handle(MouseEvent event) {
-                        xOffset = event.getSceneX();
-                        yOffset = event.getSceneY();
-                    }
-                });
-                root.setOnMouseDragged(new EventHandler<MouseEvent>() {
-                    @Override
-                    public void handle(MouseEvent event) {
-                        stage.setX(event.getScreenX() - xOffset);
-                        stage.setY(event.getScreenY() - yOffset);
-                    }
-                });
+
                 Stage primaryStage = (Stage) exit.getScene().getWindow();
                 stage.initStyle(StageStyle.TRANSPARENT);
                 Scene scene = new Scene(root, 560, 370);
